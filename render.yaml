@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: resort-dispatch-app
+    env: python
+    buildCommand: ""
+    startCommand: streamlit run nature_sprouts_app.py --server.port=$PORT
+    plan: free
